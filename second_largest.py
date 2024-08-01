@@ -15,3 +15,5 @@ def print2largest(arr):
             elif i>max2 and max1!=i:
                 max2=i
         return max2
+
+#Time complexity of above code is O(n)
