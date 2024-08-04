@@ -18,3 +18,18 @@ def check(nums): #O(n)
     else:
         return False
 
+from collections import deque
+
+def check(nums): #using DEQUEUE
+    n = len(nums)
+    if n == 0:
+        return True
+        
+    d = deque(nums)
+        
+    for i in range(n):
+        if list(d) == sorted(nums):
+            return True
+        d.rotate(1)
+        
+    return False
