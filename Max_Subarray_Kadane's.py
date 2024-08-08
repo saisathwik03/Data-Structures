@@ -27,7 +27,7 @@ def maxSubArraySum(arr):
     return max_so_far
 
 
-#Brute Force Approach: O(n^2) - Worst Case
+# Brute Force Approach: O(n^2) - Worst Case
 
 def maxSubArraySumBruteForce(arr):
     size = len(arr)
