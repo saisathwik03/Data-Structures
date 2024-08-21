@@ -26,3 +26,19 @@ def moveZeroes(nums):
         if nums[i] != 0:
             nums[last_non_zero], nums[i] = nums[i], nums[last_non_zero]
             last_non_zero += 1
+
+def moveZeroesToFront(nums):
+ 
+    insert_pos = len(nums) - 1
+    
+    for i in range(len(nums) - 1, -1, -1):
+        if nums[i] != 0:
+            nums[insert_pos] = nums[i]
+            insert_pos -= 1
+
+    for i in range(insert_pos, -1, -1):
+        nums[i] = 0
+
+nums = [0, 1, 0, 3, 12]
+moveZeroesToFront(nums)
+print(f'Modified: {nums}')
