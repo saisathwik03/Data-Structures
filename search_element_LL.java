@@ -3,24 +3,24 @@
 
 // CODE:
 
-class Solution {
-    static boolean searchKey(int n, Node head, int key) {
-        // Code here
+// class Solution {
+//     static boolean searchKey(int n, Node head, int key) {
+//         // Code here
         
-        Node current;
+//         Node current;
         
-        if(head == null){
-            return false;
-        }
+//         if(head == null){
+//             return false;
+//         }
         
-        current = head;
+//         current = head;
         
-        while(current != null){
-            if(key == current.data){
-                return true;
-            }
-            current = current.next;
-        }
-        return false;
-    }
-}
+//         while(current != null){
+//             if(key == current.data){
+//                 return true;
+//             }
+//             current = current.next;
+//         }
+//         return false;
+//     }
+// }
